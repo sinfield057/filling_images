@@ -1,0 +1,55 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#box {
+  display: inline-block;
+  padding-right: 0.1em;
+  width: 80%;
+  height: 20em;
+  border: solid 0.2em black;
+  border-right: none;
+  border-left: none;
+  border-radius: 2px;
+  position: absolute;
+  top: 10em;
+  left: 50%;
+  transform: translate( -50%, 0 );
+  vertical-align: top;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+#box img {
+  height: 100%;
+  pointer-events: none;
+}
+
+#box img:nth-last-child(0) {
+  position: relative;
+  right: 0;
+}
+
+.resizer {
+  z-index: 100;
+  position: absolute;
+  width: 0.1em;
+  background-color: red;
+  cursor: ew-resize;
+  height: 100%;
+}
+
+#resizer-right {
+  right: 0;
+}
+
+#resizer-left {
+  left: 0;
+}

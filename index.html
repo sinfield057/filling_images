@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title></title>
+  </head>
+
+  <body>
+
+    <p>Please input the number of images:</p>
+    <input
+      type="text"
+      placeholder="Valid numeric values only"
+      id="numeric"
+      onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+    />
+    <p class="error" id="error" hidden="true">Invalid number</p>
+    <button id="submit-number">Submit</button>
+
+    <div id="box">
+      <div id="resizer-left" class="resizer"></div>
+      <div id="resizer-right" class="resizer"></div>
+    </div>
+
+  </body>
+</html>
